@@ -1,0 +1,363 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(13, 14, 72);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 200px;
+}
+.logo{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.navigation a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 30px;
+}
+.navigation a:hover{
+    color: rgb(192, 167, 167);
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/library\ background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-left: 25px;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: #041537;
+    font-size: 3em;
+    font-weight: 600;
+    margin-left: 0px;
+}
+.main h3{
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+}
+.main-btn{
+    color: hsl(0, 0%, 100%);
+    background-color: #041537;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: .9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+    margin-left: 25px;
+}
+.main-btn:hover{
+    background-color: #0a3385;
+    transform: scale(1.1);
+}
+.social-icons a{
+    color: #ffffff;
+    font-size: 1.7em;
+    padding-right: 30px;
+    margin-left: 15px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #0a307d;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.Books-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Books-content img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-right: 100px;
+}
+.btn {
+  color: #fff;
+  background-color: #041537;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0.6em 1.5em;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-top: 10PX;
+}
+
+.btn:hover {
+  background-color: #0a3385;
+  transform: scale(1.05);
+}
+#Orders {
+  padding: 40px;
+  background: #f0f4ff;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#Orders h2 {
+  text-align: center;
+  color: #041537;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+#order-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#order-list li {
+  background: #ffffff;
+  margin: 12px 0;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+#order-list li:hover {
+  transform: scale(1.02);
+}
+
+#order-list img {
+  width: 50px;
+  height: 70px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+#order-list span {
+  flex: 1;
+  font-size: 0.95em;
+  color: #333;
+}
+
+.remove-btn {
+  background: #b30021;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85em;
+}
+
+.remove-btn:hover {
+  background: #800016;
+}
+
+#Orders .summary {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #041537;
+  font-weight: 600;
+}
+
+#confirm-order {
+  background: #041537;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 15px auto 0 auto;
+  left: 50%;
+  transition: 0.3s ease;
+}
+
+#confirm-order:hover {
+  background: #0a3385;
+}
+#Account {
+  padding: 40px 20px;
+  background: #f0f4ff;
+  min-height: 80vh;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 50px auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-family: sans-serif;
+}
+
+/* Title */
+#Account .title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 800;
+  color: #041537;
+  margin-bottom: 30px;
+}
+
+/* Container */
+.account-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #041537;
+  transition: 0.3s ease;
+}
+
+.profile-pic input[type="file"] {
+  cursor: pointer;
+}
+#display-name {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #041537;
+  text-align: center;
+  transition: 0.3s ease;
+}
+.account-info {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.account-info label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #041537;
+}
+
+.account-info input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  font-size: 1em;
+  transition: 0.3s ease;
+}
+
+.account-info input:focus {
+  outline: none;
+  border-color: #041537;
+  box-shadow: 0 0 5px rgba(4,21,55,0.3);
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1em;
+  transition: 0.3s ease;
+}
+
+#save-account {
+  background: #041537;
+  color: white;
+}
+
+#save-account:hover {
+  background: #0a3385;
+  transform: scale(1.05);
+}
+
+#logout {
+  background: #b30021;
+  color: white;
+}
+
+#logout:hover {
+  background: #800016;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 600px) {
+  #Account {
+    padding: 20px 10px;
+  }
+  .account-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .buttons button {
+    width: 100%;
+  }
+}

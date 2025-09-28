@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>My library</title>
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo">BOOKAK</a>
+    <nav class="navigation">
+    <a href="#Books"  class="navigation-btn">Books</a>
+    <a href="#Orders" class="navigation-btn">Orders</a>
+    <a href="#Account">Account</a>
+    </nav>
+  </header>
+  
+  <section class="main">
+    <div>
+      <h2>Hello to our world<br><span>BOOKAK LIBRARY</span></h2>
+      <h3>Read today, lead tomorrow</h3>
+      <a href="#Books" class="main-btn">Visit the library</a>
+      <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-whatsapp" ></i></a>
+      </div>
+    </div>
+  </section>
+  <section class="cards" id="Books">
+    <h2 class="title">Books</h2>
+    <div class="Books-content">
+      <div class="book1">
+        <img src="images/Book1.jpg" alt="Wuthering Highets"> 
+        <h3>Wuthering Highets</h3>
+        <p>Author: EMILY BRONTE</p>
+        <p>Buy: 150$ | Read: 70$</p>
+        <div class="rating">
+          <i class="far fa-star" data-value="1"></i>
+          <i class="far fa-star" data-value="2"></i>
+          <i class="far fa-star" data-value="3"></i>
+          <i class="far fa-star" data-value="4"></i>
+          <i class="far fa-star" data-value="5"></i>
+        </div>
+  <a href="#Orders" class="btn add-to-cart"
+  data-title="Wuthering Heights" 
+  data-author="EMILY BRONTE" 
+  data-type="Buy"
+  data-price="150"
+  data-img="images/Book1.jpg">
+  Buy
+  </a>
+  <a href="#Orders" class="btn add-to-cart"
+  data-title="Wuthering Heights" 
+  data-author="EMILY BRONTE" 
+  data-type="Read"
+  data-price="70"
+  data-img="images/Book1.jpg">
+  Read
+  </a>
+      </div>
+      <div class="book2">
+        <img src="images/Book2.png" alt="Volume||"> 
+        <h3>Volume||</h3>
+        <p>Author: PEZZOTTI & JACOBS</p>
+        <p>Buy: 200$ | Read: 100$</p>
+        <div class="rating">
+          <i class="far fa-star" data-value="1"></i>
+          <i class="far fa-star" data-value="2"></i>
+          <i class="far fa-star" data-value="3"></i>
+          <i class="far fa-star" data-value="4"></i>
+          <i class="far fa-star" data-value="5"></i>
+        </div>
+  <a href="#Orders" class="btn add-to-cart" 
+     data-title="Volume II" 
+     data-author="PEZZOTTI & JACOBS" 
+     data-type="Buy"
+     data-price="200"
+     data-img="images/Book2.png">  
+     Buy
+  </a>
+  <a href="#Orders" class="btn add-to-cart" 
+     data-title="Volume II" 
+     data-author="PEZZOTTI & JACOBS" 
+     data-type="Read"
+     data-price="100"
+     data-img="images/Book2.png">  
+     Read
+  </a>
+      </div>
+      <div class="book3">
+        <img src="images/Book3.jpg" alt="أيهما أمسى حلما"> 
+        <h3>أيهما أمسى حلما</h3>
+        <p>Author: شمس محمد</p>
+        <p>Buy: 130$ | Read: 65$</p>
+        <div class="rating">
+          <i class="far fa-star" data-value="1"></i>
+          <i class="far fa-star" data-value="2"></i>
+          <i class="far fa-star" data-value="3"></i>
+          <i class="far fa-star" data-value="4"></i>
+          <i class="far fa-star" data-value="5"></i>
+      </div>
+  <a href="#Orders" class="btn add-to-cart" 
+     data-title="أيهما أمسى حلما" 
+     data-author="شمس محمد" 
+     data-type="Buy"
+     data-price="130"
+     data-img="images/Book3.jpg">
+     Buy
+    </a>
+    <a href="#Orders" class="btn add-to-cart" 
+     data-title="أيهما أمسى حلما" 
+     data-author="شمس محمد" 
+     data-type="Read"
+     data-price="65"
+     data-img="images/Book3.jpg">
+     Read
+    </a>
+      </div>
+     <div class="book4">
+        <img src="images/Book4.png" alt="English Castels">
+        <h3>English Castels</h3>
+        <p>Author: RICHARD HUMBLE</p>
+        <p>Buy: 100$ | Read: 50$</p>
+        <div class="rating">
+          <i class="far fa-star" data-value="1"></i>
+          <i class="far fa-star" data-value="2"></i>
+          <i class="far fa-star" data-value="3"></i>
+          <i class="far fa-star" data-value="4"></i>
+          <i class="far fa-star" data-value="5"></i>
+        </div>
+  <a href="#Orders" class="btn add-to-cart" 
+     data-title="English Castels" 
+     data-author="RICHARD HUMBLE"
+     data-type="Buy"
+     data-price="100"
+     data-img="images/Book4.png">
+     Buy
+  </a>
+  <a href="#Orders" class="btn add-to-cart" 
+     data-title="English Castels" 
+     data-author="RICHARD HUMBLE"
+     data-type="Read"
+     data-price="50"
+     data-img="images/Book4.png">
+     Read
+  </a>
+    </div>
+      <div class="book5">
+        <img src="images/Book5.png" alt="The Heroes Olympus">
+        <h3>The Heroes Olympus</h3>
+        <p>Author: RICK RIORDAN</p>
+        <p>Buy: 180$ | Read: 80$</p>
+        <div class="rating">
+          <i class="far fa-star" data-value="1"></i>
+          <i class="far fa-star" data-value="2"></i>
+          <i class="far fa-star" data-value="3"></i>
+          <i class="far fa-star" data-value="4"></i>
+          <i class="far fa-star" data-value="5"></i>
+        </div>
+  <a href="#Orders" class="btn add-to-cart" 
+     data-title="The Heroes Olympus" 
+     data-author="RICK RIORDAN"
+     data-type="Buy"
+     data-price="180"
+     data-img="images/Book5.png">
+     Buy
+  </a>
+  <a href="#Orders" class="btn add-to-cart" 
+     data-title="The Heroes Olympus" 
+     data-author="RICK RIORDAN"
+     data-type="Read"
+     data-price="80"
+     data-img="images/Book5.png">
+     Read
+  </a>
+      </div>
+  <div class="book6">
+        <img src="images/Book6.png" alt="Colors Of Goodbye"> 
+        <h3>Colors Of Goodbye</h3>
+        <p>Author: SHAUNA NIEQUIST</p>
+        <p>Buy: 140$ | Read: 60$</p>
+        <div class="rating">
+          <i class="far fa-star" data-value="1"></i>
+          <i class="far fa-star" data-value="2"></i>
+          <i class="far fa-star" data-value="3"></i>
+          <i class="far fa-star" data-value="4"></i>
+          <i class="far fa-star" data-value="5"></i>
+        </div>
+  <a href="#Orders" class="btn add-to-cart"
+  data-title="Colors Of Goodbye" 
+  data-author="SHAUNA NIEQUIST" 
+  data-type="Buy"
+  data-price="140"
+  data-img="images/Book6.png">
+  Buy
+  </a>
+  <a href="#Orders" class="btn add-to-cart"
+  data-title="Colors Of Goodbye" 
+  data-author="SHAUNA NIEQUIST" 
+  data-type="Read"
+  data-price="60"
+  data-img="images/Book6.png">
+  Read
+  </a>
+      </div>
+  <div class="book7">
+        <img src="images/Book7.png" alt="Sweet Afton"> 
+        <h3>Sweet Afton</h3>
+        <p>Author: CLENT MOORE</p>
+        <p>Buy: 165$ | Read: 70$</p>
+        <div class="rating">
+          <i class="far fa-star" data-value="1"></i>
+          <i class="far fa-star" data-value="2"></i>
+          <i class="far fa-star" data-value="3"></i>
+          <i class="far fa-star" data-value="4"></i>
+          <i class="far fa-star" data-value="5"></i>
+        </div>
+  <a href="#Orders" class="btn add-to-cart"
+  data-title="Sweet Afton" 
+  data-author="CLENT MOORE" 
+  data-type="Buy"
+  data-price="165"
+  data-img="images/Book7.png">
+  Buy
+  </a>
+  <a href="#Orders" class="btn add-to-cart"
+  data-title="Sweet Afton" 
+  data-author="CLENT MOORE" 
+  data-type="Read"
+  data-price="70"
+  data-img="images/Book7.png">
+  Read
+  </a>
+      </div>
+  <div class="book8">
+        <img src="images/Book8.png" alt="The Secret Garden"> 
+        <h3>The Secret Garden</h3>
+        <p>Author: FRANCES BURNETT</p>
+        <p>Buy: 145$ | Read: 55$</p>
+        <div class="rating">
+          <i class="far fa-star" data-value="1"></i>
+          <i class="far fa-star" data-value="2"></i>
+          <i class="far fa-star" data-value="3"></i>
+          <i class="far fa-star" data-value="4"></i>
+          <i class="far fa-star" data-value="5"></i>
+        </div>
+  <a href="#Orders" class="btn add-to-cart"
+  data-title="The Secret Garden" 
+  data-author="FRANCES BURNETT" 
+  data-type="Buy"
+  data-price="145"
+  data-img="images/Book8.png">
+  Buy
+  </a>
+  <a href="#Orders" class="btn add-to-cart"
+  data-title="The Secret Garden" 
+  data-author="FRANCES BURNETT" 
+  data-type="Read"
+  data-price="55"
+  data-img="images/Book8.png">
+  Read
+  </a>
+      </div>
+  <div class="book9">
+        <img src="images/Book9.png" alt="ADVERSITY"> 
+        <h3>ADVERSITY</h3>
+        <p>Author: MELODY WINTER</p>
+        <p>Buy: 105$ | Read: 52$</p>
+        <div class="rating">
+          <i class="far fa-star" data-value="1"></i>
+          <i class="far fa-star" data-value="2"></i>
+          <i class="far fa-star" data-value="3"></i>
+          <i class="far fa-star" data-value="4"></i>
+          <i class="far fa-star" data-value="5"></i>
+        </div>
+  <a href="#Orders" class="btn add-to-cart"
+  data-title="ADVERSITY" 
+  data-author="MELODY WINTER" 
+  data-type="Buy"
+  data-price="105"
+  data-img="images/Book9.png">
+  Buy
+  </a>
+  <a href="#Orders" class="btn add-to-cart"
+  data-title="ADVERSITY" 
+  data-author="MELODY WINTER" 
+  data-type="Read"
+  data-price="52"
+  data-img="images/Book9.png">
+ Read
+  </a>
+      </div>
+  <div class="book10">
+        <img src="images/Book10.png" alt="The Prince & The Witch"> 
+        <h3>The Prince & The Witch</h3>
+        <p>Author: L.A.THOMPSON</p>
+        <p>Buy: 120$ | Read: 50$</p>
+        <div class="rating">
+          <i class="far fa-star" data-value="1"></i>
+          <i class="far fa-star" data-value="2"></i>
+          <i class="far fa-star" data-value="3"></i>
+          <i class="far fa-star" data-value="4"></i>
+          <i class="far fa-star" data-value="5"></i>
+        </div>
+  <a href="#Orders" class="btn add-to-cart"
+  data-title="The Prince & The Witch" 
+  data-author="L.A.THOMPSON" 
+  data-type="Buy"
+  data-price="120"
+  data-img="images/Book10.png">
+  Buy
+  </a>
+  <a href="#Orders" class="btn add-to-cart"
+  data-title="The Prince & The Witch" 
+  data-author="L.A.THOMPSON" 
+  data-type="Read"
+  data-price="50"
+  data-img="images/Book10.png">
+  Read
+  </a>
+      </div>
+  <div class="book11">
+        <img src="images/Book11.png" alt="The Potter's poison"> 
+        <h3>The Potter's poison</h3>
+        <p>Author: DR. S.K.E</p>
+        <p>Buy: 125$ | Read: 55$</p>
+        <div class="rating">
+          <i class="far fa-star" data-value="1"></i>
+          <i class="far fa-star" data-value="2"></i>
+          <i class="far fa-star" data-value="3"></i>
+          <i class="far fa-star" data-value="4"></i>
+          <i class="far fa-star" data-value="5"></i>
+        </div>
+  <a href="#Orders" class="btn add-to-cart"
+  data-title="The Potter's poison" 
+  data-author="DR. S.K.E"
+  data-type="Buy"
+  data-price="125" 
+  data-img="images/Book11.png">
+  Buy
+  </a>
+  <a href="#Orders" class="btn add-to-cart"
+  data-title="The Potter's poison" 
+  data-author="DR. S.K.E"
+  data-type="Read"
+  data-price="55" 
+  data-img="images/Book11.png">
+  Read
+  </a>
+      </div>
+  <div class="book12">
+        <img src="images/Book12.png" alt="ZOE & The OWL"> 
+        <h3>ZOE & The OWL</h3>
+        <p>Author: DAVE DOE</p>
+        <p>Buy: 110$ | Read: 48$</p>
+        <div class="rating">
+          <i class="far fa-star" data-value="1"></i>
+          <i class="far fa-star" data-value="2"></i>
+          <i class="far fa-star" data-value="3"></i>
+          <i class="far fa-star" data-value="4"></i>
+          <i class="far fa-star" data-value="5"></i>
+        </div>
+  <a href="#Orders" class="btn add-to-cart"
+  data-title="ZOE & The OWL" 
+  data-author="DAVE DOE" 
+  data-type="Buy"
+  data-price="110"
+  data-img="images/Book12.png">
+  Buy
+  </a>
+  <a href="#Orders" class="btn add-to-cart"
+  data-title="ZOE & The OWL" 
+  data-author="DAVE DOE" 
+  data-type="Read"
+  data-price="48"
+  data-img="images/Book12.png">
+  Read
+  </a>
+      </div>
+</section>
+<section id="Orders">
+  <h2 class="title">Orders</h2>
+  <ul id="order-list"></ul>
+  <p>Total Orders: <span id="order-count">0</span></p>
+  <p>Total Price: <span id="total-price">0</span></p>
+  <button id="confirm-order">confirm order</button>
+</section>
+<section id="Account">
+  <h2 class="title">My Account</h2>
+
+  <div class="account-container">
+    <div class="profile-pic">
+      <img id="profile-image" src="images/default-profile.png" alt="Profile Picture">
+      <input type="file" id="change-pic" accept="image/*">
+    </div>
+
+    <div class="account-info">
+      <label>
+        Name:
+        <input type="text" id="account-name" placeholder="Enter your name">
+      </label>
+      <label>
+        Email:
+        <input type="email" id="account-email" placeholder="Enter your email">
+      </label>
+      <label>
+        Address:
+        <input type="address" id="account-address" placeholder="Enter your address">
+      </label>
+      <label>
+        Password:
+        <input type="password" id="account-password" placeholder="Enter your password">
+      </label>
+      <div class="buttons">
+        <button id="save-account">Save</button>
+        <button id="logout">Logout</button>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<script>
+  const cartButtons = document.querySelectorAll(".add-to-cart");
+  const orderList = document.getElementById("order-list");
+  const orderCount = document.getElementById("order-count");
+  const totalPriceEL = document.getElementById("total-price");
+  const confirmBtn = document.getElementById("confirm-order");
+  let totalPrice = 0;
+
+
+  function updateCount() {
+    orderCount.textContent = orderList.children.length;
+    totalPriceEL.textContent = totalPrice.toFixed(2);
+  }
+
+  cartButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const title = button.getAttribute("data-title");
+      const author = button.getAttribute("data-author");
+      const img = button.getAttribute("data-img");
+      const type = button.getAttribute("data-type");
+      const price =parseFloat(button.getAttribute("data-price"));
+
+      const li = document.createElement("li");
+      li.innerHTML = `
+        <div style="display:flex; align-items:center; gap:10px;">
+          <img src="${img}" alt="${title}" width="60">
+          <span><strong>${title}</strong> - ${author}
+          <br><em>${type}</em> : ${price} $
+            </span>
+        </div>
+        <button class="remove-btn">❌ Remove</button>
+      `;
+      li.setAttribute("data-price", price);
+
+      li.querySelector(".remove-btn").addEventListener("click", () => {
+        totalPrice -= parseFloat(li.getAttribute("data-price"));
+        li.remove();
+        updateCount();
+      });
+
+      orderList.appendChild(li);
+      totalPrice += price;
+      updateCount();
+    });
+  });
+  confirmBtn.addEventListener("click", () => {
+    if (orderList.children.length === 0) {
+      alert("Your order is empty!");
+    } else {
+    const isConfirmed = confirm(`Are you sure you want to confirm your order?\nTotal Books: ${orderList.children.length}\nTotal Price: $${totalPrice.toFixed(2)}`);
+    
+    if (isConfirmed) {
+      alert("Your order has been confirmed!");
+      orderList.innerHTML = "";
+      totalPrice = 0;
+      updateCount();
+    } else {
+      alert("Order not confirmed.");
+    }
+  }
+  });
+  const saveBtn = document.getElementById("save-account");
+  const logoutBtn = document.getElementById("logout");
+  const profileImage = document.getElementById("profile-image");
+  const changePic = document.getElementById("change-pic");
+
+  changePic.addEventListener("change", () => {
+    const file = changePic.files[0];
+    if(file){
+      const reader = new FileReader();
+      reader.onload = e => {
+        profileImage.src = e.target.result;
+      }
+      reader.readAsDataURL(file);
+    }
+  });
+
+  saveBtn.addEventListener("click", () => {
+    const name = document.getElementById("account-name").value;
+    const email = document.getElementById("account-email").value;
+    const adress = document.getElementById("account-address").value;
+    const password = document.getElementById("account-password").value;
+
+    localStorage.setItem("userName", name);
+    localStorage.setItem("userEmail", email);
+    localStorage.setItem("userPassword", password);
+    localStorage.setItem("userAddress", adress);
+
+    alert("Account info saved successfully!");
+    document.getElementById("account-password").value = "";
+  });
+
+  logoutBtn.addEventListener("click", () => {
+    localStorage.removeItem("userName");
+    localStorage.removeItem("userEmail"); 
+    localStorage.removeItem("userAddress");
+    localStorage.removeItem("userPassword");
+
+    document.getElementById("account-name").value = "";
+    document.getElementById("account-email").value = "";
+    document.getElementById("account-address").value = "";
+    document.getElementById("account-password").value = "";
+    profileImage.src = "";
+
+    
+    alert("You have been logged out!");
+  });
+</script>
+</body>
+</html>
